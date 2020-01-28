@@ -1,0 +1,5 @@
+target
+mycrate_wasm/pkg
+mycrate_web/dist
+mycrate_web/node_modules
+mycrate_web/pkg

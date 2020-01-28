@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "mycrate_core",
+    "mycrate_wasm"
+]
+

@@ -1,0 +1,21 @@
+{
+  "author": "Your Name Here <you@example.com>",
+  "name": "mycrate_web",
+  "version": "0.1.0",
+  "repository": "https://github.com/evestera/rust-wasm-workshop",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server -d",
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "@wasm-tool/wasm-pack-plugin": "1.1.0",
+    "html-webpack-plugin": "3.2.0",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.1"
+  },
+  "dependencies": {
+    "text-encoding-utf-8": "1.0.2"
+  }
+}
