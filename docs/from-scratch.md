@@ -2,6 +2,10 @@
 
 TODO -- Sorry, I have not had time to finish this part yet.
 
+TLDR: Create a workspace with two crates. Mark one of them as cdylib and add
+`wasm-bindgen = "0.2.58"` as a dep. Add a third subfolder, and do `npm init`.
+Add a webpack-config.
+
 ## Some other options
 
 [The `wasm-pack` template](https://github.com/rustwasm/wasm-pack-template):

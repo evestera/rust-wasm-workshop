@@ -1,7 +1,7 @@
 # WebAssembly with Rust
 
 Note: The formatting of this document (expandable solutions, internal links,
-etc.) has only been verified on GitHub.
+etc.) has only been verified on GitHub. (Sorry).
 
 ## Setup
 
@@ -106,7 +106,7 @@ doing some actual editing.
 As a start, I think our WebAssembly code should be slightly better than our
 normal Rust code. Exactly 1 better in fact.
 
-Edit the add function in `mycrate_wasm` so that adds 1 to the result. Make sure
+Edit the add function in `mycrate_wasm` so that it adds 1 to the result. Make sure
 the number in the console is now 1 bigger.
 
 ## Hello Bob!
@@ -163,7 +163,7 @@ extern {
 <details>
 <summary>A note for those who already know Rust</summary>
 
-`alert` can also be declared to take a reference, like this:
+`alert` can also be declared to take a string slice, like this:
 
 ```rust
 #[wasm_bindgen]
@@ -196,6 +196,10 @@ pub fn greet(name: String) {
 ```
 </details>
 
+Note. Jumping between JS and WebAssembly is actually pretty expensive,
+relatively speaking, so it is not something you want to do in a
+performance-critical part of your code.
+
 ## Now what?
 
 Where to go from here depends a lot on what you know already, and what you
@@ -211,7 +215,7 @@ least the [guessing game tutorial](https://doc.rust-lang.org/book/ch02-00-guessi
 
 Maybe you should try to [implement the guessing game in WebAssembly](docs/wasm-guessing-game.md)?
 
-If you want to follow a guide the rustwasm
+If you want to follow a longer guide the rustwasm
 [Game of Life tutorial](https://rustwasm.github.io/docs/book/game-of-life/introduction.html)
 covers a lot of ground, including testing and debugging.
 
@@ -220,8 +224,10 @@ covers a lot of ground, including testing and debugging.
 As mentioned earlier, `mycrate_core` could be replaced by any Rust crate,
 provided it does not rely on any non-Rust code or OS APIs.
 
-If your crate does depend on something that is not compatible with WebAssembly
-you may be able to adapt it through the use of feature flags.
+However, if your crate does depend on something that is not compatible with
+WebAssembly, don't give up yet.
+You may still be able to adapt it through the use of feature flags /
+conditional compilation.
 
 This particular repository is stripped down a bit to make it easy to understand
 and easy to expand. So if you want to build a real, production-ready project
