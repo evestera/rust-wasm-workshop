@@ -250,3 +250,8 @@ has a lot of interesting examples to draw inspiration from.
 How about [drawing directly to a canvas, from Rust](https://rustwasm.github.io/wasm-bindgen/examples/paint.html)?
 Or even [loading a WebAssembly module from WebAssembly](https://rustwasm.github.io/docs/wasm-bindgen/examples/wasm-in-wasm.html)?
 
+### Write WebAssembly? Nah, I want to **run** WebAssembly
+
+Sure, thing. Have a look at [the WebAssembly spec](https://webassembly.github.io/spec/core/).
+(Also of interest to those who just like some heavy programming language theory)
+and have a look at [this list of existing engines](https://github.com/mbasso/awesome-wasm#non-web-embeddings).
