@@ -201,6 +201,15 @@ Note. Jumping between JS and WebAssembly is actually pretty expensive,
 relatively speaking, so it is not something you want to do in a
 performance-critical part of your code.
 
+## Deploying the application
+
+So, you have a working application and want to show it to the world.
+
+1. Go to the `mycrate_web` folder
+2. Run `npm run build`
+3. See that `dist` folder? Those are just static files you can deploy to any old hosting provider (like Firebase or Netlify).
+4. You are done. No backend or anything like that. Just share that URL.
+
 ## Now what?
 
 Where to go from here depends a lot on what you know already, and what you
