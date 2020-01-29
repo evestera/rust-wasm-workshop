@@ -148,7 +148,7 @@ In mycrate_web/src/index.js
 
 ## Calling JS from Rust
 
-Now, as great as that was, perhaps we should do the alert call inside the JS as 
+Now, as great as that was, perhaps we should do the alert call inside the Rust as 
 well?
 
 We can do this by declaring an external function and letting `wasm_bindgen` bind
