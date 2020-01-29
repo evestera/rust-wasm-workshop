@@ -9,12 +9,13 @@ You need:
 
 - A Rust toolchain. Use [rustup](https://rustup.rs/)
 - [nodejs and npm](https://nodejs.org/)
-- [wasm-pack](https://rustwasm.github.io/wasm-pack/) (though you can let it
-be autoinstalled later if you prefer)
+- [wasm-pack](https://rustwasm.github.io/wasm-pack/)
 - The editor of your choice. I personally like IntelliJ IDEA with
  [IntelliJ Rust](https://intellij-rust.github.io/). For other alternatives see
  [this overview](https://areweideyet.com/). Visual Studio Code is often
  recommended.
+ 
+[Troubleshooting](docs/troubleshooting.md)
 
 ## Resources
 
